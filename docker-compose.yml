@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  apihelloworld:
+    image: ${DOCKER_REGISTRY-}apihelloworld
+    build:
+      context: .
+      dockerfile: APIHelloWorld/Dockerfile
